@@ -116,7 +116,8 @@ export default {
         // 请求消息api,获取菜单列表
         // getPermissionList
         const list = await this.$api.getPermissionList();
-        this.menuList = list;
+        console.log(list);
+        this.menuList = list.menuList;
       } catch (error) {
          console.error(error);
       }
